@@ -26,16 +26,17 @@
             android:scaleType="centerCrop"
             android:src="@drawable/security"
             android:layout_marginBottom="25dp"/>
+
         <EditText
             android:id="@+id/name_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your name here "
-            android:inputType="textMultiLine"
             android:layout_marginBottom="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textSize="30sp"/>
+            android:hint="Enter your name here "
+            android:inputType="textMultiLine"
+            android:textSize="30sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -145,7 +146,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4.Which of the followings are good passwords(select all that apply)?"
+            android:text="4.Which of the followings are good passwords(Select two.)?"
             android:textSize="30dp"
             android:layout_marginLeft="10dp" />
         <CheckBox
@@ -173,6 +174,53 @@
             android:text="7he_ll/o"
             android:textAppearance="?android:textAppearanceMedium"
             android:layout_marginBottom="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Which two methods will reduce the chances that your password will be compromised? (Choose two.)"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp" />
+        <CheckBox
+            android:id="@+id/checkbox1b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Make your password lower case. "
+            android:textAppearance="?android:textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/checkbox2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change your password regularly"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/checkbox3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Default passwords. "
+            android:textAppearance="?android:textAppearanceMedium" />
+        <CheckBox
+            android:id="@+id/checkbox4b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use a passphrase."
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_marginBottom="40dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.What do most websites use to secure all communications between the servers and web browsers?"
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp" />
+        <EditText
+            android:id="@+id/question6_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Hint: 3 Letter Acronym"
+            android:inputType="textMultiLine"
+            android:textSize="30sp" />
         <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
