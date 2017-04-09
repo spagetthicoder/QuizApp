@@ -28,7 +28,9 @@ public class MainActivity extends AppCompatActivity {
         question3();
         question4();
 
-        Toast.makeText(this, name + " Your score is: " + quizPoints + " out of 5.", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, name + " your score is: " + quizPoints + " out of 5.", Toast.LENGTH_SHORT).show();
+
+        quizPoints=0;
     }
 
     public int question1(){
