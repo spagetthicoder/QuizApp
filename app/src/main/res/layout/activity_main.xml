@@ -33,13 +33,16 @@
             android:hint="Enter your name here "
             android:inputType="textMultiLine"
             android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:textSize="30sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1.Cookies raise some security and privacy concerns becase?"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp"/>
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -73,7 +76,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2.What does social engineering mean in a security context?"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -107,7 +111,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3.Which of the following is a fundamental and well established Privacy-Enhancing Technology?"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -141,7 +146,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4.Which of the followings are good passwords(select all that apply)?"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            android:layout_marginLeft="10dp" />
         <CheckBox
             android:id="@+id/checkbox1"
             android:layout_width="wrap_content"
