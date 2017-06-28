@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Security Quiz App</string>
+    <string name="securityURL"><a href="https://privacytoolsio.github.io/privacytools.io/">Learn how to protect yourself</a></string>
 </resources>

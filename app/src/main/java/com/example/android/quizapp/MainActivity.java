@@ -103,18 +103,26 @@ public class MainActivity extends AppCompatActivity {
 
     //Method for Question 5
     public int question5() {
-        CheckBox question5CheckBox1 = (CheckBox) findViewById(R.id.checkbox2b);
-        boolean selected5b = question5CheckBox1.isChecked();
+        CheckBox question5CheckBox1 = (CheckBox) findViewById(R.id.checkbox1b);
+        boolean selected5a = question5CheckBox1.isChecked();
 
-        CheckBox question5Checkbox2 = (CheckBox) findViewById(R.id.checkbox4b);
-        boolean selected5d = question5Checkbox2.isChecked();
+        CheckBox question5CheckBox2 = (CheckBox) findViewById(R.id.checkbox2b);
+        boolean selected5b = question5CheckBox2.isChecked();
 
-        if (selected5b) {
+        CheckBox question5CheckBox3 = (CheckBox) findViewById(R.id.checkbox3b);
+        boolean selected5c = question5CheckBox3.isChecked();
+
+        CheckBox question5Checkbox4 = (CheckBox) findViewById(R.id.checkbox4b);
+        boolean selected5d = question5Checkbox4.isChecked();
+
+        if(!selected5a && selected5b && !selected5c && selected5d) {
+            quizPoints += 2;
+        }else if (selected5b) {
+            quizPoints += 1;
+        }else if (selected5d) {
             quizPoints += 1;
         }
-        if (selected5d) {
-            quizPoints += 1;
-        }
+
         return quizPoints;
     }
 

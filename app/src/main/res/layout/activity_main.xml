@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,17 +15,18 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#2196F3"
             android:text="Security Quiz"
-            android:textSize="50dp"
             android:textAlignment="center"
-            android:background="#2196F3"/>
+            android:textSize="50dp" />
+
         <ImageView
             android:id="@+id/photo_image_view"
             android:layout_width="match_parent"
             android:layout_height="140dp"
+            android:layout_marginBottom="25dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/security"
-            android:layout_marginBottom="25dp"/>
+            android:src="@drawable/security" />
 
         <EditText
             android:id="@+id/name_view"
@@ -41,17 +42,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1.Cookies raise some security and privacy concerns becase?"
-            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:text="1.Cookies raise some security and privacy concerns becase?"
+            android:textSize="30sp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
             android:layout_marginLeft="2dp"
-            android:layout_marginBottom="40dp">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/a_radio_button"
@@ -78,17 +79,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2.What does social engineering mean in a security context?"
-            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp" />
+            android:text="2.What does social engineering mean in a security context?"
+            android:textSize="30dp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginBottom="40dp"
-            android:layout_marginLeft="2dp">
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/a2_radio_button"
@@ -115,17 +116,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3.Which of the following is a fundamental and well established Privacy-Enhancing Technology?"
-            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp" />
+            android:text="3.Which of the following is a fundamental and well established Privacy-Enhancing Technology?"
+            android:textSize="30dp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginBottom="40dp"
-            android:layout_marginLeft="2dp">
+            android:layout_marginLeft="2dp"
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/a3_radio_button"
@@ -152,31 +153,34 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4.Which of the followings are good passwords(Select two.)?"
-            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp" />
+            android:text="4.Which of the followings are good passwords(Select two.)?"
+            android:textSize="30dp" />
+
         <CheckBox
             android:id="@+id/checkbox1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="he22o"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:layout_marginLeft="5dp"/>
+            android:textAppearance="?android:textAppearanceMedium" />
+
         <CheckBox
             android:id="@+id/checkbox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="h3ll4"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:layout_marginLeft="5dp"/>
+            android:textAppearance="?android:textAppearanceMedium" />
+
         <CheckBox
             android:id="@+id/checkbox3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="he3ll9o"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:layout_marginLeft="5dp"/>
+            android:textAppearance="?android:textAppearanceMedium" />
 
         <CheckBox
             android:id="@+id/checkbox4"
@@ -190,46 +194,52 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5.Which two methods will reduce the chances that your password will be compromised? (Choose two.)"
-            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp" />
+            android:text="5.Which two methods will reduce the chances that your password will be compromised? (Choose two.)"
+            android:textSize="30dp" />
+
         <CheckBox
             android:id="@+id/checkbox1b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="Make your password lower case. "
-            android:textAppearance="?android:textAppearanceMedium"
-            android:layout_marginLeft="5dp"/>
+            android:textAppearance="?android:textAppearanceMedium" />
+
         <CheckBox
             android:id="@+id/checkbox2b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="Change your password regularly"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:layout_marginLeft="5dp"/>
+            android:textAppearance="?android:textAppearanceMedium" />
+
         <CheckBox
             android:id="@+id/checkbox3b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
             android:text="Use Default passwords. "
-            android:textAppearance="?android:textAppearanceMedium"
-            android:layout_marginLeft="5dp"/>
+            android:textAppearance="?android:textAppearanceMedium" />
+
         <CheckBox
             android:id="@+id/checkbox4b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Use a passphrase."
-            android:textAppearance="?android:textAppearanceMedium"
             android:layout_marginBottom="40dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_marginLeft="5dp"
+            android:text="Use a passphrase."
+            android:textAppearance="?android:textAppearanceMedium" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6.What do most websites use to secure all communications between the servers and web browsers?"
-            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp" />
+            android:text="6.What do most websites use to secure all communications between the servers and web browsers?"
+            android:textSize="30dp" />
+
         <EditText
             android:id="@+id/question6_view"
             android:layout_width="match_parent"
@@ -240,23 +250,25 @@
             android:hint="Hint: 3 Letter Acronym"
             android:inputType="textMultiLine"
             android:textSize="20sp" />
+
         <TextView
             android:id="@+id/link"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
             android:text="@string/securityURL"
             android:textSize="20dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="2dp"
-            android:gravity="center"
             android:visibility="gone" />
+
         <Button
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SUBMIT"
             android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
             android:onClick="submitAnswers"
-            android:layout_marginBottom="30dp"/>
+            android:text="SUBMIT" />
     </LinearLayout>
 </ScrollView>
