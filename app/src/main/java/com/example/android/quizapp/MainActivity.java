@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    int quizPoints = 0;
+    int quizPoints;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
     //Method for Question 1
     public int question1() {
-
         RadioButton question1Checkbox = (RadioButton) findViewById(R.id.c_radio_button);
         boolean selected = question1Checkbox.isChecked();
 
@@ -86,16 +85,23 @@ public class MainActivity extends AppCompatActivity {
 
     //Method for Question 4
     public int question4() {
-        CheckBox question4CheckBox1 = (CheckBox) findViewById(R.id.checkbox3);
-        boolean selected4a = question4CheckBox1.isChecked();
+        CheckBox question4Checkbox1 = (CheckBox) findViewById(R.id.checkbox1);
+        boolean selected4a = question4Checkbox1.isChecked();
 
-        CheckBox question4Checkbox2 = (CheckBox) findViewById(R.id.checkbox4);
+        CheckBox question4Checkbox2 = (CheckBox) findViewById(R.id.checkbox2);
         boolean selected4b = question4Checkbox2.isChecked();
 
-        if (selected4a) {
+        CheckBox question4CheckBox3 = (CheckBox) findViewById(R.id.checkbox3);
+        boolean selected4c = question4CheckBox3.isChecked();
+
+        CheckBox question4Checkbox4 = (CheckBox) findViewById(R.id.checkbox4);
+        boolean selected4d = question4Checkbox4.isChecked();
+
+        if(selected4c && !selected4a && !selected4b && selected4d){
+            quizPoints += 2;
+        }else if (selected4c && !selected4a && !selected4b && !selected4d) {
             quizPoints += 1;
-        }
-        if (selected4b) {
+        }else if (selected4d && !selected4a && !selected4b && !selected4c) {
             quizPoints += 1;
         }
         return quizPoints;
@@ -115,11 +121,11 @@ public class MainActivity extends AppCompatActivity {
         CheckBox question5Checkbox4 = (CheckBox) findViewById(R.id.checkbox4b);
         boolean selected5d = question5Checkbox4.isChecked();
 
-        if(!selected5a && selected5b && !selected5c && selected5d) {
+        if (!selected5a && selected5b && !selected5c && selected5d) {
             quizPoints += 2;
-        }else if (selected5b) {
+        } else if (selected5b && !selected5a && !selected5c && !selected5d) {
             quizPoints += 1;
-        }else if (selected5d) {
+        } else if (selected5d && !selected5a && !selected5b && !selected5c) {
             quizPoints += 1;
         }
 
@@ -132,9 +138,8 @@ public class MainActivity extends AppCompatActivity {
         String checkAnswer = question6.getText().toString();
 
         String tls = "TLS";
-        String tls2 = "tls";
 
-        if (checkAnswer.equals(tls) || checkAnswer.equals(tls2)) {
+        if (checkAnswer.equalsIgnoreCase(tls)) {
             quizPoints += 1;
         }
         return quizPoints;
