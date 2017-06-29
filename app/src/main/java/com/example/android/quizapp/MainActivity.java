@@ -97,11 +97,11 @@ public class MainActivity extends AppCompatActivity {
         CheckBox question4Checkbox4 = (CheckBox) findViewById(R.id.checkbox4);
         boolean selected4d = question4Checkbox4.isChecked();
 
-        if(selected4c && !selected4a && !selected4b && selected4d){
+        if (selected4c && !selected4a && !selected4b && selected4d) {
             quizPoints += 2;
-        }else if (selected4c && !selected4a && !selected4b && !selected4d) {
+        } else if (selected4c && !selected4a && !selected4b && !selected4d) {
             quizPoints += 1;
-        }else if (selected4d && !selected4a && !selected4b && !selected4c) {
+        } else if (selected4d && !selected4a && !selected4b && !selected4c) {
             quizPoints += 1;
         }
         return quizPoints;
